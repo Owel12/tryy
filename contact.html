@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Family Website</title>
+    <link rel="icon" href="favicon.ico" type="img/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div align="center" class="navbar">
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i>About Us</a></li>
+            <li><a href="contact.html"><i class="fas fa-phone"></i>Contact</a></li>
+        </ul>
+    </div>
+
+    <main class="content">
+        <h1>Contact Us</h1>
+
+        <div class="contact-form">
+            <form action="submit_form.php" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div class="success-message">
+                <p>Your message has been sent successfully!</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
